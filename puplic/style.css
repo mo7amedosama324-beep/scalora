@@ -440,3 +440,37 @@ header .container {
         max-width: 80px;
     }
 }
+.WhyUs{
+   
+    padding: 20px 0;
+    height: 30vh;
+    position: relative;
+    overflow: hidden;
+}
+.WhyUs .row p{
+    font-size: 14px;
+    color: white;
+    font-weight: 500;
+    inset-inline-start: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.WhyUs .row h2{
+    font-size: 40px;
+    color: white;
+    font-weight: 700;
+    inset-inline-start: 20px;
+    width: 50%;
+    line-height: 1.2;
+}
+.WhyUs .row a{
+    font-size: 14px;
+    color: white;
+    font-weight: 500;
+    position: absolute;
+    bottom: 20px;
+    inset-inline-end: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid white;
+}
