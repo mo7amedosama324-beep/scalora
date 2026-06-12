@@ -1,27 +1,32 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: 'Poppins', sans-serif;
     background: #f5f5f5;
-    background-color:#161616;
+    background-color: #161616;
 }
-.container{
+
+.container {
     width: 90%;
     margin: 0 auto;
 }
-header .container{
+
+header .container {
     width: 100%;
 }
-.page{
+
+.page {
     border-radius: 50px;
     width: 98%;
     margin: 22px auto;
     overflow: hidden;
 }
-.nav{
+
+.nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -36,14 +41,15 @@ header .container{
     z-index: 1;
     border-radius: 50px;
     margin: auto 0;
-
 }
-.nav .navlogo{
+
+.nav .navlogo {
     display: flex;
     align-items: center;
     flex: 0 0 auto;
 }
-.nav .navlink{
+
+.nav .navlink {
     display: flex;
     flex: 0 1 680px;
     justify-content: center;
@@ -54,16 +60,16 @@ header .container{
     max-width: 680px;
     clip-path: polygon(0 0, 100% 0, 92% 100%, 8% 100%);
 }
-.nav .navlink a{
+
+.nav .navlink a {
     text-decoration: none;
-    color: black;
+    color: white;
     margin: 0 10px;
     font-weight: 500;
     font-size: 20px;
-    color: white;
-    
 }
-.nav .navbtn{
+
+.nav .navbtn {
     flex: 0 0 auto;
     text-decoration: none;
     color: white;
@@ -74,11 +80,13 @@ header .container{
     border: 1px solid white;
     margin-top: 2px;
 }
-.nav .navbtn a{
+
+.nav .navbtn a {
     text-decoration: none;
     color: white;
 }
-.page{
+
+.page {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -86,14 +94,15 @@ header .container{
     background-image: url(../imgs/69abb903afc2d25c8c2d06c1_a9e1bf5eeea9d9954741186962863f38_hero-bg.svg);
     background-size: cover;
     background-position: center;
-
 }
-.row{
+
+.row {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.page .row .col{
+
+.page .row .col {
     width: 65%;
     margin: auto;
     display: flex;
@@ -101,18 +110,21 @@ header .container{
     align-items: center;
     text-align: center;
 }
-.page .row .col h1{
+
+.page .row .col h1 {
     font-size: 15px;
     color: white;
     margin-bottom: 20px;
 }
-.page .row .col p{
+
+.page .row .col p {
     font-size: 65px;
     color: white;
     font-weight: 700;
     margin-bottom: 30px;
 }
-.page .row .col a{
+
+.page .row .col a {
     text-decoration: none;
     color: white;
     background-color: rgb(63, 51, 174);
@@ -121,56 +133,48 @@ header .container{
     font-weight: 500;
     margin-bottom: 170px;
 }
-/* إخفاء العناصر في البداية وتجهيزها للحركة */
+
 .page .row .col h1,
 .page .row .col p,
 .page .row .col a {
     opacity: 0;
-    /* بنستخدم cubic-bezier عشان الحركة تكون ناعمة وسريعة في البداية وبطيئة في النهاية */
     animation: coolReveal 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 }
 
-/* ترتيب ظهور العناصر (واحد ورا التاني) */
 .page .row .col h1 {
-    animation-delay: 0.2s; /* العنوان يظهر الأول */
+    animation-delay: 0.2s;
 }
 
 .page .row .col p {
-    animation-delay: 0.4s; /* الفقرة تظهر بعده */
+    animation-delay: 0.4s;
 }
 
 .page .row .col a {
-    animation-delay: 0.6s; /* الزرار يظهر في الآخر */
+    animation-delay: 0.6s;
 }
 
-/* إعدادات حركة شريط التصفح (بيظهر فوراً بدون تأخير) */
 .nav {
     opacity: 0;
     animation: navReveal 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 }
 
-
-/* =========================================
-   الكي فريمز (تأثيرات الظهور الاحترافية)
-========================================= */
-
 @keyframes coolReveal {
     0% {
         opacity: 0;
-        transform: translateY(50px) scale(0.95); /* مخفي ومسحوب لتحت ومصغر سنة بسيطة */
-        filter: blur(5px); /* تأثير زغللة بيخلي الظهور شيك */
+        transform: translateY(50px) scale(0.95);
+        filter: blur(5px);
     }
     100% {
         opacity: 1;
-        transform: translateY(0) scale(1); /* يرجع لمكانه وحجمه الطبيعي */
-        filter: blur(0); /* الزغللة تختفي */
+        transform: translateY(0) scale(1);
+        filter: blur(0);
     }
 }
 
 @keyframes navReveal {
     0% {
         opacity: 0;
-        transform: translate(-50%, 30px); 
+        transform: translate(-50%, 30px);
         filter: blur(5px);
     }
     100% {
@@ -179,18 +183,260 @@ header .container{
         filter: blur(0);
     }
 }
-.page .row .col .img1{
+
+.page .row .col .img1 {
     width: 100%;
     height: 335px;
     max-width: 1000px;
     border-radius: 20px;
 }
+
 .page .row .col img {
     width: 100%;
     max-width: 1000px;
     border-radius: 20px;
     margin-top: 30px;
-    
 }
 
+.page .row .col .img1 {
+    opacity: 0;
+    transform: scale(0.85);
+    transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.8s ease;
+}
 
+.page .row .col .img1.active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+@media (max-width: 1440px) {
+    .container {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .page .row .col p {
+        font-size: clamp(40px, 5vw, 64px);
+    }
+}
+
+@media (max-width: 1200px) {
+    .nav {
+        gap: 15px;
+    }
+
+    .navlink {
+        max-width: 500px;
+        padding: 16px 24px;
+    }
+
+    .page .row .col {
+        width: 90%;
+    }
+
+    .page .row .col p {
+        font-size: clamp(36px, 4.5vw, 56px);
+    }
+
+    .page .row .col h1 {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container {
+        width: 100%;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+
+    .nav {
+        gap: 10px;
+        margin-top: 15px;
+        padding: 0 10px;
+    }
+
+    .nav .navlink {
+        max-width: 420px;
+        padding: 14px 20px;
+    }
+
+    .nav .navlink a {
+        font-size: 15px;
+        margin: 0 6px;
+    }
+
+    .nav .navbtn {
+        padding: 8px 16px;
+        font-size: 14px;
+        white-space: nowrap;
+    }
+
+    .page .row {
+        flex-wrap: wrap;
+    }
+
+    .page .row .col {
+        width: 85%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .page .row .col p {
+        font-size: 44px;
+        font-weight: 700;
+        line-height: 1.3;
+    }
+
+    .page .row .col h1 {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .page .row .col a {
+        margin-bottom: 60px;
+        display: inline-block;
+    }
+
+    .page .row .col .img1 {
+        width: 80% !important;
+        height: auto !important;
+        max-width: 100%;
+        object-fit: contain;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 15px;
+        margin-bottom: 20px;
+        gap: 10px;
+    }
+
+    .nav .navlogo {
+        order: 1;
+        margin: 0;
+    }
+
+    .nav .navbtn {
+        order: 2;
+        margin: 0;
+    }
+
+    .nav .navlink {
+        order: 3;
+        flex: 1 1 100%;
+        max-width: 100%;
+        width: 100%;
+        clip-path: none;
+        border-radius: 15px;
+        padding: 12px;
+        margin: 10px 0 0 0;
+        gap: 12px;
+        justify-content: center;
+        flex-wrap: wrap;
+        transition: all 0.3s ease;
+    }
+
+    .nav .navlink a {
+        font-size: 15px;
+        font-weight: 600;
+        white-space: nowrap;
+    }
+
+    .page {
+        padding-top: 200px;
+        overflow-x: hidden;
+    }
+
+    .page .row .col {
+        width: 95%;
+    }
+
+    .page .row .col p {
+        font-size: 32px;
+        font-weight: 700;
+        margin-bottom: 15px;
+        line-height: 1.3;
+    }
+
+    .page .row .col h1 {
+        font-size: 14px;
+        font-weight: 500;
+        color: #e0e0e0;
+        line-height: 1.7;
+    }
+
+    .page .row .col a {
+        margin-bottom: 40px;
+        font-size: 14px;
+        padding: 10px 24px;
+    }
+
+    .page .row .col .img1 {
+        width: 90% !important;
+        height: auto !important;
+        margin: 20px auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .page {
+        padding-top: 220px;
+    }
+
+    .page .row .col {
+        width: 100%;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+
+    .page .row .col p {
+        font-size: 26px;
+        line-height: 1.4;
+    }
+
+    .page .row .col h1 {
+        font-size: 13px;
+    }
+
+    .page .row .col a {
+        width: 80%;
+        text-align: center;
+        margin: 0 auto 30px auto;
+        display: block;
+    }
+
+    .page .row .col .img1 {
+        width: 100% !important;
+    }
+
+    .nav .navlink {
+        gap: 8px;
+        padding: 10px;
+    }
+
+    .nav .navlink a {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 360px) {
+    .page .row .col p {
+        font-size: 22px;
+    }
+
+    .nav .navlink a {
+        font-size: 12px;
+    }
+
+    .navlogo img,
+    .navbtn img {
+        max-width: 80px;
+    }
+}

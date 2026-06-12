@@ -22,3 +22,18 @@ window.addEventListener('scroll', () => {
     img.style.opacity = opacity;
     img.style.filter = `blur(${blur}px)`;
 });
+const imgContainer = document.querySelector('.page .row .col .img1');
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            imgContainer.classList.add('active'); // يضيف الكلاس ليظهر الصورة ويكبرها
+        }
+    });
+}, {
+    threshold: 0.2 // تشتغل أول ما 20% من الصورة تدخل الشاشة وأنت نازل
+});
+
+if (imgContainer) {
+    observer.observe(imgContainer);
+}
