@@ -19,6 +19,7 @@ header .container{
     border-radius: 50px;
     width: 98%;
     margin: 22px auto;
+    overflow: hidden;
 }
 .nav{
     display: flex;
@@ -85,7 +86,7 @@ header .container{
     background-image: url(../imgs/69abb903afc2d25c8c2d06c1_a9e1bf5eeea9d9954741186962863f38_hero-bg.svg);
     background-size: cover;
     background-position: center;
-    height: 100vh;
+
 }
 .row{
     display: flex;
@@ -118,6 +119,7 @@ header .container{
     padding: 15px 30px;
     border-radius: 5px;
     font-weight: 500;
+    margin-bottom: 170px;
 }
 /* إخفاء العناصر في البداية وتجهيزها للحركة */
 .page .row .col h1,
@@ -173,7 +175,14 @@ header .container{
     }
     100% {
         opacity: 1;
-        transform: translate(-50%, 0); /* يحافظ على التوسيط الأفقي */
+        transform: translate(-50%, 0);
         filter: blur(0);
     }
 }
+.page .row .col img {
+    width: 100%;
+    max-width: 1000px;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+
