@@ -58,7 +58,7 @@ header .container {
     border-radius: 50px;
     margin: 0 10px;
     max-width: 680px;
-    clip-path: polygon(0 0, 100% 0, 92% 100%, 8% 100%);
+    clip-path:  polygon(0% 0%, 100% 0%, 90% 100%, 10% 100%);
 }
 
 .nav .navlink a {
@@ -525,7 +525,7 @@ header .container {
     background-color: transparent;
     border: 1px solid #1f1f1f;
     border-radius: 0;
-    padding: 40px;
+    padding: 70px 40px;
     height: 100%;
     margin-right: -1px;
     margin-bottom: -1px;
@@ -541,7 +541,7 @@ header .container {
 }
 
 .features .card h2 {
-    font-size: 19px;
+    font-size: px;
     color: #ffffff;
     font-weight: 600;
     margin-bottom: 15px;
@@ -554,4 +554,31 @@ header .container {
     font-weight: 400;
     line-height: 1.6;
     margin-bottom: 0;
+}
+.testimonial{
+    padding: 80px 0;
+    background-color: #1b1a19;
+}
+.testimonial .row {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+
+}   
+.testimonial .content {
+    width: 60%;
+}
+.testimonial .row p {
+    font-size: 14px;
+    color: white;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.testimonial .row h2 {
+    font-size: 50px;
+    color: white;
+    font-weight: 700;
+    line-height: 1.2;
 }
